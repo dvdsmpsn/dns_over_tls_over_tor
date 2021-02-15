@@ -74,12 +74,15 @@ These two should be different.
 Stubby is now in buster so if you have buster you can just
 
 	sudo apt-get install stubby
+	# ******* Stubby isn't available for Raspbian.
 
 This actually starts the program so we need to stop it.
 
 	sudo systemctl stop stubby
 
 If you dont have stubby in your repositories there is a description [here](https://www.reddit.com/r/pihole/comments/7oyh9m/guide_how_to_use_pihole_with_stubby/)  of how to build it from source.
+
+^^^ These instructions are out of date as stubby now uses `cmake` to build it. Couldn't get that working.
 
 (Note it might be worth building it from source anyway to get the latest version).
 
